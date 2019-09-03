@@ -1,0 +1,80 @@
+:root {
+    --main: wihte;
+    --secondary: #1a73e8;
+    --tercary: #242e39;
+}
+#root {
+    height: 100%;
+}
+.app-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.header {
+    background-color: var(--secondary);
+    text-align: center;
+    height: 100px;
+}
+.container {
+    align-items: flex-end;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: -webkit-fill-available;
+    display: flex;
+    width: 100%;
+}
+
+.ui.button {
+    margin: 25px;
+}
+[data-tooltip]:after {
+    white-space: normal;
+    width: 500px;
+}
+.current{
+    background-color: #eb7fff !important;
+}
+.selected {
+    background-color: #1ae894 !important;
+}
+.swap {
+    background-color:  #0ee9ff !important;
+}
+.bar {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    margin: 1px;
+    flex-grow: 1;
+    background-color: var(--secondary);
+}
+.heights {
+    position: absolute;
+    height: 20px;
+    top: 100%;
+    font-size: 0.6em;
+    width: -webkit-fill-available;
+    overflow: hidden;
+    text-align: center;
+}
+.ui.floating.message {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+input[type="range" i] {
+    color: white;
+}
+.slider {
+    position: relative;
+    display: inline-block;
+    top: 12px;
+    margin: 0 10px;
+    color: white;
+}
+
